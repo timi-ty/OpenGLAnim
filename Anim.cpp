@@ -10,6 +10,7 @@ static GLfloat rotTheta = 0.0;
 static GLint old_t = 0;
 int currentPose;
 float frameTimeElapsed;
+float translation;
 class scrPt {
 public:
 	GLint x, y;
@@ -34,11 +35,14 @@ public:
 };
 static PoseAngles keyFrames[4];
 static void strikePose(PoseAngles);
+static PoseAngles lerpPose(float);
+static float lerp(float, float, float);
 static void init(void)
 {
 	keyFrames[0] = PoseAngles(10, 175, 5, 160, 5, 175, 5, 175);
 	keyFrames[1] = PoseAngles(-20, 165, -10, 175, -45, 125, -5, 175);
-	keyFrames[2] = PoseAngles(0, 180, 0, 180, 0, 180, 0, 180);
+	//keyFrames[2] = PoseAngles(0, 180, 0, 180, 0, 180, 0, 180);
+	keyFrames[2] = PoseAngles(-5, 160, -10, 175, -5, 175, -5, 175);
 	keyFrames[3] = PoseAngles(10, 175, 20, 165, 5, 175, 45, 125);
 
 	strikePose(keyFrames[0]);
@@ -124,7 +128,8 @@ void displayStickMan(void)
 {
 	glClear(GL_COLOR_BUFFER_BIT);
 	glPushMatrix();
-	strikePose(keyFrames[currentPose]);
+	strikePose(lerpPose(frameTimeElapsed));
+	glTranslatef(translation, 0.0, 0.0);
 	glCallList(regHex);
 	glPopMatrix();
 	glutSwapBuffers();
@@ -139,7 +144,32 @@ void updatePose(float dt)
 		frameTimeElapsed = 0;
 		cout << currentPose << endl;
 	}
+
+	translation += dt * 10.0f;
+	if (translation > winWidth / 2) {
+		translation = 0;
+	}
 }
+static PoseAngles lerpPose(float tween) {
+	PoseAngles inbetweenPose;
+	PoseAngles lastPose = keyFrames[currentPose];
+	PoseAngles nextPose = keyFrames[(currentPose + 1) % 4];
+	inbetweenPose.upperLeftArm = lerp(lastPose.upperLeftArm, nextPose.upperLeftArm, tween);
+	inbetweenPose.lowerLeftArm = lerp(lastPose.lowerLeftArm, nextPose.lowerLeftArm, tween);
+	inbetweenPose.upperRightArm = lerp(lastPose.upperRightArm, nextPose.upperRightArm, tween);
+	inbetweenPose.lowerRightArm = lerp(lastPose.lowerRightArm, nextPose.lowerRightArm, tween);
+	inbetweenPose.upperLeftLeg = lerp(lastPose.upperLeftArm, nextPose.upperLeftArm, tween);
+	inbetweenPose.lowerLeftLeg = lerp(lastPose.lowerLeftLeg, nextPose.lowerLeftLeg, tween);
+	inbetweenPose.upperRightLeg = lerp(lastPose.upperRightLeg, nextPose.upperRightLeg, tween);
+	inbetweenPose.lowerRightLeg = lerp(lastPose.lowerRightLeg, nextPose.lowerRightLeg, tween);
+
+	return inbetweenPose;
+}
+
+static float lerp(float a, float b, float t) {
+	return a + t * (b - a);
+}
+
 void winReshapeFcn(GLint newWidth, GLint newHeight)
 {
 	glViewport(0, 0, (GLsizei)newWidth, (GLsizei)newHeight);
