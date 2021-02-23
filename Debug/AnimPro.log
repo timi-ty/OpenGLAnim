@@ -1,0 +1,11 @@
+﻿LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+Triangle.obj : error LNK2019: unresolved external symbol _glutInitWindowSize referenced in function _main
+Triangle.obj : error LNK2019: unresolved external symbol _glutInitDisplayMode referenced in function _main
+Triangle.obj : error LNK2019: unresolved external symbol _glutMainLoop referenced in function _main
+Triangle.obj : error LNK2019: unresolved external symbol _glutSwapBuffers referenced in function "void __cdecl RenderScene(void)" (?RenderScene@@YAXXZ)
+Triangle.obj : error LNK2019: unresolved external symbol _glutReshapeFunc referenced in function _main
+Triangle.obj : error LNK2019: unresolved external symbol _glutDisplayFunc referenced in function _main
+Triangle.obj : error LNK2019: unresolved external symbol ___glutInitWithExit referenced in function _glutInit_ATEXIT_HACK
+Triangle.obj : error LNK2019: unresolved external symbol ___glutCreateWindowWithExit referenced in function _glutCreateWindow_ATEXIT_HACK
+gltools.lib(GLTools.obj) : error LNK2019: unresolved external symbol ___iob_func referenced in function "unsigned int __cdecl gltLoadShaderPairWithAttributes(char const *,char const *,...)" (?gltLoadShaderPairWithAttributes@@YAIPBD0ZZ)
+D:\Documents\School\EEG 517\OpenGL Projects\AnimPro\Debug\AnimPro.exe : fatal error LNK1120: 9 unresolved externals

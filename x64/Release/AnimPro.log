@@ -1,0 +1,135 @@
+﻿  Triangle.cpp
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(79,27): error C2061: syntax error: identifier 'GLenum'
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(88,59): error C2061: syntax error: identifier 'GLuint'
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(91,40): error C2061: syntax error: identifier 'GLfloat'
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(92,39): error C2061: syntax error: identifier 'GLfloat'
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(93,39): error C2061: syntax error: identifier 'GLfloat'
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(94,42): error C2061: syntax error: identifier 'GLfloat'
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(102,31): error C2061: syntax error: identifier 'GLfloat'
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(105,31): error C2061: syntax error: identifier 'GLfloat'
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(108,30): error C2061: syntax error: identifier 'GLfloat'
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(111,37): error C2061: syntax error: identifier 'GLuint'
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(112,38): error C2061: syntax error: identifier 'GLuint'
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(115,24): error C3646: 'primitiveType': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(115,24): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(117,24): error C3646: 'uiVertexArray': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(117,24): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(118,28): error C3646: 'uiNormalArray': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(118,28): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(119,23): error C3646: 'uiColorArray': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(119,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(120,11): error C2143: syntax error: missing ';' before '*'
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(120,11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(120,31): error C2238: unexpected token(s) preceding ';'
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(121,28): error C3646: 'vertexArrayObject': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(121,28): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(123,30): error C3646: 'nVertsBuilding': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(123,30): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(124,25): error C3646: 'nNumVerts': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(124,25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(125,32): error C3646: 'nNumTextureUnits': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(125,32): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(91,84): error C2065: 'vVerts': undeclared identifier
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(92,82): error C2065: 'vNorms': undeclared identifier
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(93,83): error C2065: 'vColors': undeclared identifier
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(94,109): error C2065: 'vTex': undeclared identifier
+D:\Utility\GL\GLTools-Win\include\GLBatch.h(94,116): error C2065: 'uiTextureLayer': undeclared identifier
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(85,19): error C3646: 'uiShaderID': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(85,19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(99,24): error C3646: 'GetStockShader': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(99,24): error C2059: syntax error: '('
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(99,52): error C2238: unexpected token(s) preceding ';'
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(102,23): error C3646: 'UseStockShader': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(102,23): error C2059: syntax error: '('
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(102,56): error C2238: unexpected token(s) preceding ';'
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(107,24): error C3646: 'LoadShaderPair': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(107,24): error C2059: syntax error: '('
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(107,90): error C2238: unexpected token(s) preceding ';'
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(110,27): error C3646: 'LoadShaderPairSrc': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(110,27): error C2059: syntax error: '('
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(110,95): error C2238: unexpected token(s) preceding ';'
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(113,38): error C3646: 'LoadShaderPairWithAttributes': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(113,38): error C2059: syntax error: '('
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(113,113): error C2238: unexpected token(s) preceding ';'
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(114,41): error C3646: 'LoadShaderPairSrcWithAttributes': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(114,41): error C2059: syntax error: '('
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(114,120): error C2238: unexpected token(s) preceding ';'
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(117,22): error C3646: 'LookupShader': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(117,22): error C2059: syntax error: '('
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(117,76): error C2238: unexpected token(s) preceding ';'
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(120,24): error C3646: 'uiStockShaders': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(120,24): error C2143: syntax error: missing ',' before '['
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(120,41): error C2143: syntax error: missing ')' before ';'
+D:\Utility\GL\GLTools-Win\include\GLShaderManager.h(120,41): error C2238: unexpected token(s) preceding ';'
+D:\Utility\GL\GLTools-Win\include\GLTriangleBatch.h(96,31): error C2061: syntax error: identifier 'GLuint'
+D:\Utility\GL\GLTools-Win\include\GLTriangleBatch.h(101,36): error C3646: 'GetIndexCount': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLTriangleBatch.h(101,41): error C2062: type 'void' unexpected
+D:\Utility\GL\GLTools-Win\include\GLTriangleBatch.h(101,43): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\Utility\GL\GLTools-Win\include\GLTriangleBatch.h(102,37): error C3646: 'GetVertexCount': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLTriangleBatch.h(102,42): error C2062: type 'void' unexpected
+D:\Utility\GL\GLTools-Win\include\GLTriangleBatch.h(102,44): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\Utility\GL\GLTools-Win\include\GLTriangleBatch.h(109,19): error C2143: syntax error: missing ';' before '*'
+D:\Utility\GL\GLTools-Win\include\GLTriangleBatch.h(109,19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLTriangleBatch.h(109,28): error C2238: unexpected token(s) preceding ';'
+D:\Utility\GL\GLTools-Win\include\GLTriangleBatch.h(114,27): error C3646: 'nMaxIndexes': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLTriangleBatch.h(114,27): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLTriangleBatch.h(115,27): error C3646: 'nNumIndexes': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLTriangleBatch.h(115,27): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLTriangleBatch.h(116,25): error C3646: 'nNumVerts': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLTriangleBatch.h(116,25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLTriangleBatch.h(118,29): error C3646: 'bufferObjects': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLTriangleBatch.h(118,29): error C2143: syntax error: missing ',' before '['
+D:\Utility\GL\GLTools-Win\include\GLTriangleBatch.h(118,32): error C2143: syntax error: missing ')' before ';'
+D:\Utility\GL\GLTools-Win\include\GLTriangleBatch.h(118,32): error C2238: unexpected token(s) preceding ';'
+D:\Utility\GL\GLTools-Win\include\GLTriangleBatch.h(119,33): error C3646: 'vertexArrayBufferObject': unknown override specifier
+D:\Utility\GL\GLTools-Win\include\GLTriangleBatch.h(119,33): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLTools.h(144,26): error C2065: 'GLint': undeclared identifier
+D:\Utility\GL\GLTools-Win\include\GLTools.h(144,33): error C2065: 'nMajor': undeclared identifier
+D:\Utility\GL\GLTools-Win\include\GLTools.h(144,41): error C2065: 'GLint': undeclared identifier
+D:\Utility\GL\GLTools-Win\include\GLTools.h(144,48): error C2065: 'nMinor': undeclared identifier
+D:\Utility\GL\GLTools-Win\include\GLTools.h(144,54): error C2182: 'gltGetOpenGLVersion': illegal use of type 'void'
+D:\Utility\GL\GLTools-Win\include\GLTools.h(153,7): error C2143: syntax error: missing ';' before '*'
+D:\Utility\GL\GLTools-Win\include\GLTools.h(153,7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLTools.h(153,74): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLTools.h(157,8): error C2143: syntax error: missing ';' before '*'
+D:\Utility\GL\GLTools-Win\include\GLTools.h(157,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLTools.h(157,1): error C2086: 'int GLbyte': redefinition
+D:\Utility\GL\GLTools-Win\include\GLTools.h(153): message : see declaration of 'GLbyte'
+D:\Utility\GL\GLTools-Win\include\GLTools.h(157,54): error C2061: syntax error: identifier 'GLint'
+D:\Utility\GL\GLTools-Win\include\GLTools.h(157,115): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLTools.h(162,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLTools.h(162,7): error C2146: syntax error: missing ';' before identifier 'gltGrabScreenTGA'
+D:\Utility\GL\GLTools-Win\include\GLTools.h(167,56): error C2061: syntax error: identifier 'GLfloat'
+D:\Utility\GL\GLTools-Win\include\GLTools.h(168,58): error C2061: syntax error: identifier 'GLfloat'
+D:\Utility\GL\GLTools-Win\include\GLTools.h(169,54): error C2061: syntax error: identifier 'GLfloat'
+D:\Utility\GL\GLTools-Win\include\GLTools.h(170,62): error C2061: syntax error: identifier 'GLfloat'
+D:\Utility\GL\GLTools-Win\include\GLTools.h(171,46): error C2061: syntax error: identifier 'GLfloat'
+D:\Utility\GL\GLTools-Win\include\GLTools.h(174,55): error C2061: syntax error: identifier 'GLuint'
+D:\Utility\GL\GLTools-Win\include\GLTools.h(175,51): error C2061: syntax error: identifier 'GLuint'
+D:\Utility\GL\GLTools-Win\include\GLTools.h(177,25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLTools.h(177,8): error C2146: syntax error: missing ';' before identifier 'gltLoadShaderPair'
+D:\Utility\GL\GLTools-Win\include\GLTools.h(178,40): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLTools.h(178,1): error C2086: 'int GLuint': redefinition
+D:\Utility\GL\GLTools-Win\include\GLTools.h(177): message : see declaration of 'GLuint'
+D:\Utility\GL\GLTools-Win\include\GLTools.h(178,9): error C2146: syntax error: missing ';' before identifier 'gltLoadShaderPairWithAttributes'
+D:\Utility\GL\GLTools-Win\include\GLTools.h(180,28): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLTools.h(180,1): error C2086: 'int GLuint': redefinition
+D:\Utility\GL\GLTools-Win\include\GLTools.h(177): message : see declaration of 'GLuint'
+D:\Utility\GL\GLTools-Win\include\GLTools.h(180,8): error C2146: syntax error: missing ';' before identifier 'gltLoadShaderPairSrc'
+D:\Utility\GL\GLTools-Win\include\GLTools.h(181,42): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\Utility\GL\GLTools-Win\include\GLTools.h(181,1): error C2086: 'int GLuint': redefinition
+D:\Utility\GL\GLTools-Win\include\GLTools.h(177): message : see declaration of 'GLuint'
+D:\Utility\GL\GLTools-Win\include\GLTools.h(181,8): error C2146: syntax error: missing ';' before identifier 'gltLoadShaderPairSrcWithAttributes'
+D:\Utility\GL\GLTools-Win\include\GLTools.h(183,28): error C2146: syntax error: missing ')' before identifier 'progName'
+D:\Utility\GL\GLTools-Win\include\GLTools.h(184,35): error C2146: syntax error: missing ')' before identifier 'width'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\GL\gl.h(51,27): error C2378: 'GLbyte': redefinition; symbol cannot be overloaded with a typedef
+D:\Utility\GL\GLTools-Win\include\GLTools.h(153): message : see declaration of 'GLbyte'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\GL\gl.h(53,18): error C2378: 'GLint': redefinition; symbol cannot be overloaded with a typedef
+D:\Utility\GL\GLTools-Win\include\GLTools.h(162): message : see declaration of 'GLint'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\GL\gl.h(57,28): error C2378: 'GLuint': redefinition; symbol cannot be overloaded with a typedef
+D:\Utility\GL\GLTools-Win\include\GLTools.h(177): message : see declaration of 'GLuint'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\GL\gl.h(1159,77): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\GL\gl.h(1159,77): error C2143: syntax error: missing ',' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\GL\gl.h(1160,47): error C2146: syntax error: missing ')' before identifier 'i'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\GL\gl.h(1162,62): error C2061: syntax error: identifier 'GLuint'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\GL\gl.h(1162,62): fatal error C1003: error count exceeds 100; stopping compilation
