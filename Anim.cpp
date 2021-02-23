@@ -5,10 +5,12 @@
 using namespace std;
 const double TWO_PI = 6.2831853;
 GLsizei winWidth = 1280, winHeight = 720; // Initial display window size.
-GLuint regHex; // Define name for display list.
+GLuint regStickman; // Define name for stickman display list.
+GLuint regOtherObjects;// Define name for other objects display list.
 static GLfloat rotTheta = 0.0;
 static GLint old_t = 0;
 int currentPose;
+int currentPosition;
 float frameTimeElapsed;
 float translation;
 class scrPt {
@@ -37,17 +39,52 @@ static PoseAngles keyFrames[4];
 static void strikePose(PoseAngles);
 static PoseAngles lerpPose(float);
 static float lerp(float, float, float);
+static void otherObjects(void);
 static void init(void)
 {
 	keyFrames[0] = PoseAngles(10, 175, 5, 160, 5, 175, 5, 175);
 	keyFrames[1] = PoseAngles(-20, 165, -10, 175, -45, 125, -5, 175);
-	//keyFrames[2] = PoseAngles(0, 180, 0, 180, 0, 180, 0, 180);
 	keyFrames[2] = PoseAngles(-5, 160, -10, 175, -5, 175, -5, 175);
 	keyFrames[3] = PoseAngles(10, 175, 20, 165, 5, 175, 45, 125);
 
 	strikePose(keyFrames[0]);
 
+	otherObjects();
+
 	old_t = glutGet(GLUT_ELAPSED_TIME);
+}
+
+static void otherObjects(void)
+{
+	scrPt hexVertex;
+	GLdouble hexTheta;
+	GLint k;
+	glClearColor(1.0, 1.0, 1.0, 0.0);
+	/* Set up a display list for a red regular hexagon.
+	* Vertices for the hexagon are six equally spaced
+	* points around the circumference of a circle.
+	*/
+	regOtherObjects = glGenLists(1);
+	glNewList(regOtherObjects, GL_COMPILE);
+	glColor3f(1.0, 0.0, 0.0);
+	glBegin(GL_POLYGON);
+	for (k = 0; k < 3; k++) {
+		hexTheta = TWO_PI * k / 3;
+		hexVertex.x = (currentPosition > 0 ? -100 : 100) + 50 * cos(hexTheta);
+		hexVertex.y = 250 + 50 * sin(hexTheta);
+		glVertex2i(hexVertex.x, hexVertex.y);
+	}
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	for (k = 0; k < 3; k++) {
+		hexTheta = TWO_PI * k / 3;
+		hexVertex.x = (currentPosition > 0 ? -80 : 120) + 50 * cos(hexTheta);
+		hexVertex.y = -180 + 50 * sin(hexTheta);
+		glVertex2i(hexVertex.x, hexVertex.y);
+	}
+	glEnd();
+	glEndList();
 }
 
 static void strikePose(PoseAngles poseAngles) {
@@ -57,8 +94,8 @@ static void strikePose(PoseAngles poseAngles) {
 	GLint segmentCount = 360;
 	glClearColor(1.0, 1.0, 1.0, 0.0);
 
-	regHex = glGenLists(1);
-	glNewList(regHex, GL_COMPILE);
+	regStickman = glGenLists(1);
+	glNewList(regStickman, GL_COMPILE);
 	glColor3f(0.3f, 0.3f, 0.3f);
 
 	//Draw Head
@@ -86,8 +123,8 @@ static void strikePose(PoseAngles poseAngles) {
 	glVertex2f(elbowVertex.x, elbowVertex.y); //l.u.arm end
 
 	glVertex2f(elbowVertex.x, elbowVertex.y); //l.l.arm start
-	glVertex2f(elbowVertex.x - 50 * sin((poseAngles.upperLeftArm + poseAngles.lowerLeftArm - 180) * TWO_PI / 360), 
-		elbowVertex.y - 50 * cos((poseAngles.upperLeftArm + poseAngles.lowerLeftArm - 180) * TWO_PI / 360)); //l.l.arm end
+	glVertex2f(elbowVertex.x - 50 * sin(((double)poseAngles.upperLeftArm + poseAngles.lowerLeftArm - 180.0) * TWO_PI / 360), 
+		elbowVertex.y - 50 * cos(((double)poseAngles.upperLeftArm + poseAngles.lowerLeftArm - 180.0) * TWO_PI / 360)); //l.l.arm end
 
 	glVertex2f(hexVertex.x, hexVertex.y); //r.u.arm start
 	elbowVertex.x = hexVertex.x + 40 * sin(poseAngles.upperRightArm * TWO_PI / 360);
@@ -95,8 +132,8 @@ static void strikePose(PoseAngles poseAngles) {
 	glVertex2f(elbowVertex.x, elbowVertex.y); //r.u.arm end
 
 	glVertex2f(elbowVertex.x, elbowVertex.y); //r.l.arm start
-	glVertex2f(elbowVertex.x + 50 * sin((poseAngles.upperRightArm - poseAngles.lowerRightArm - 180) * TWO_PI / 360),
-		elbowVertex.y - 50 * cos((poseAngles.upperRightArm - poseAngles.lowerRightArm - 180) * TWO_PI / 360)); //r.l.arm end
+	glVertex2f(elbowVertex.x + 50 * sin(((double)poseAngles.upperRightArm - poseAngles.lowerRightArm - 180.0) * TWO_PI / 360),
+		elbowVertex.y - 50 * cos(((double)poseAngles.upperRightArm - poseAngles.lowerRightArm - 180.0) * TWO_PI / 360)); //r.l.arm end
 
 
 	scrPt waistVert;
@@ -108,8 +145,8 @@ static void strikePose(PoseAngles poseAngles) {
 	glVertex2f(elbowVertex.x, elbowVertex.y); //l.u.leg end
 
 	glVertex2f(elbowVertex.x, elbowVertex.y); //l.l.leg start
-	glVertex2f(elbowVertex.x - 60 * sin((poseAngles.upperLeftLeg - poseAngles.lowerLeftLeg - 180) * TWO_PI / 360),
-		elbowVertex.y - 60 * cos((poseAngles.upperLeftLeg - poseAngles.lowerLeftLeg - 180) * TWO_PI / 360)); //l.l.leg end
+	glVertex2f(elbowVertex.x - 60 * sin(((double)poseAngles.upperLeftLeg - poseAngles.lowerLeftLeg - 180.0) * TWO_PI / 360),
+		elbowVertex.y - 60 * cos(((double)poseAngles.upperLeftLeg - poseAngles.lowerLeftLeg - 180.0) * TWO_PI / 360)); //l.l.leg end
 
 	glVertex2f(waistVert.x, waistVert.y); //r.u.leg start
 	elbowVertex.x = waistVert.x + 50 * sin(poseAngles.upperRightLeg * TWO_PI / 360);
@@ -117,32 +154,38 @@ static void strikePose(PoseAngles poseAngles) {
 	glVertex2f(elbowVertex.x, elbowVertex.y); //r.u.leg end
 
 	glVertex2f(elbowVertex.x, elbowVertex.y); //r.l.leg start
-	glVertex2f(elbowVertex.x + 60 * sin((poseAngles.upperRightLeg + poseAngles.lowerRightLeg - 180) * TWO_PI / 360),
-		elbowVertex.y - 60 * cos((poseAngles.upperRightLeg + poseAngles.lowerRightLeg - 180) * TWO_PI / 360)); //r.l.leg end
+	glVertex2f(elbowVertex.x + 60 * sin(((double)poseAngles.upperRightLeg + poseAngles.lowerRightLeg - 180.0) * TWO_PI / 360),
+		elbowVertex.y - 60 * cos(((double)poseAngles.upperRightLeg + poseAngles.lowerRightLeg - 180.0) * TWO_PI / 360)); //r.l.leg end
 	glEnd();
 
 	glEndList();
 }
 
-void displayStickMan(void)
+void displayAll(void)
 {
 	glClear(GL_COLOR_BUFFER_BIT);
 	glPushMatrix();
 	strikePose(lerpPose(frameTimeElapsed));
 	glTranslatef(translation, 0.0, 0.0);
-	glCallList(regHex);
+	glCallList(regStickman);
 	glPopMatrix();
+	otherObjects();
+	glCallList(regOtherObjects);
 	glutSwapBuffers();
 	glFlush();
 }
-void updatePose(float dt)
+void updateKeyFrame(float dt)
 {
 	frameTimeElapsed += dt;
+
 	if (frameTimeElapsed > 1.0f) {
 		currentPose++;
 		currentPose %= 4;
 		frameTimeElapsed = 0;
-		cout << currentPose << endl;
+
+		currentPosition++;
+		currentPosition %= 2;
+		//cout << currentPose << endl;
 	}
 
 	translation += dt * 10.0f;
@@ -150,6 +193,7 @@ void updatePose(float dt)
 		translation = 0;
 	}
 }
+
 static PoseAngles lerpPose(float tween) {
 	PoseAngles inbetweenPose;
 	PoseAngles lastPose = keyFrames[currentPose];
@@ -189,7 +233,7 @@ void idle(void) {
 	dt = ((float)t - (float)old_t) / 1000.0f;
 	old_t = t;
 
-	updatePose(dt);
+	updateKeyFrame(dt);
 
 	glutPostRedisplay();
 }
@@ -218,7 +262,7 @@ void main(int argc, char** argv)
 	glutInitWindowSize(winWidth, winHeight);
 	glutCreateWindow("Animation Example");
 	init();
-	glutDisplayFunc(displayStickMan);
+	glutDisplayFunc(displayAll);
 	glutReshapeFunc(winReshapeFcn);
 	glutMouseFunc(mouseFcn);
 	glutMainLoop();
