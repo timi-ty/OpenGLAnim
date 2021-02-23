@@ -39,7 +39,7 @@ static PoseAngles keyFrames[4];
 static void strikePose(PoseAngles);
 static PoseAngles lerpPose(float);
 static float lerp(float, float, float);
-static void otherObjects(void);
+static void otherObjects(float);
 static void init(void)
 {
 	keyFrames[0] = PoseAngles(10, 175, 5, 160, 5, 175, 5, 175);
@@ -49,12 +49,12 @@ static void init(void)
 
 	strikePose(keyFrames[0]);
 
-	otherObjects();
+	otherObjects(0);
 
 	old_t = glutGet(GLUT_ELAPSED_TIME);
 }
 
-static void otherObjects(void)
+static void otherObjects(float tween)
 {
 	scrPt hexVertex;
 	GLdouble hexTheta;
@@ -70,7 +70,7 @@ static void otherObjects(void)
 	glBegin(GL_POLYGON);
 	for (k = 0; k < 3; k++) {
 		hexTheta = TWO_PI * k / 3;
-		hexVertex.x = (currentPosition > 0 ? -100 : 100) + 50 * cos(hexTheta);
+		hexVertex.x = -100 + tween * 100 + 50 * cos(hexTheta);
 		hexVertex.y = 250 + 50 * sin(hexTheta);
 		glVertex2i(hexVertex.x, hexVertex.y);
 	}
@@ -79,7 +79,7 @@ static void otherObjects(void)
 	glBegin(GL_POLYGON);
 	for (k = 0; k < 3; k++) {
 		hexTheta = TWO_PI * k / 3;
-		hexVertex.x = (currentPosition > 0 ? -80 : 120) + 50 * cos(hexTheta);
+		hexVertex.x = -80 + tween * 100 + 50 * cos(hexTheta);
 		hexVertex.y = -180 + 50 * sin(hexTheta);
 		glVertex2i(hexVertex.x, hexVertex.y);
 	}
@@ -169,7 +169,7 @@ void displayAll(void)
 	glTranslatef(translation, 0.0, 0.0);
 	glCallList(regStickman);
 	glPopMatrix();
-	otherObjects();
+	otherObjects(frameTimeElapsed);
 	glCallList(regOtherObjects);
 	glutSwapBuffers();
 	glFlush();
