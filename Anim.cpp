@@ -60,10 +60,6 @@ static void otherObjects(float tween)
 	GLdouble hexTheta;
 	GLint k;
 	glClearColor(1.0, 1.0, 1.0, 0.0);
-	/* Set up a display list for a red regular hexagon.
-	* Vertices for the hexagon are six equally spaced
-	* points around the circumference of a circle.
-	*/
 	regOtherObjects = glGenLists(1);
 	glNewList(regOtherObjects, GL_COMPILE);
 	glColor3f(1.0, 0.0, 0.0);

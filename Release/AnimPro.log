@@ -53,8 +53,8 @@ D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(158,17):
 D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(157,27): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
 D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(258,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
   Generating code
-  4 of 18 functions (22.2%) were compiled, the rest were copied from previous compilation.
-    1 functions were new in current compilation
+  0 of 18 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   AnimPro.vcxproj -> D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Release\AnimPro.exe
