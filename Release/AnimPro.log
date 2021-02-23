@@ -1,10 +1,55 @@
-﻿  Triangle.cpp
-D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Triangle.cpp(28,21): warning C4244: '=': conversion from 'double' to 'GLint', possible loss of data
-D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Triangle.cpp(29,21): warning C4244: '=': conversion from 'double' to 'GLint', possible loss of data
-D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Triangle.cpp(48,17): warning C4305: '+=': truncation from 'double' to 'GLfloat'
-D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Triangle.cpp(80,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+﻿  Anim.cpp
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(64,22): warning C4244: '=': conversion from 'double' to 'GLint', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(65,21): warning C4244: '=': conversion from 'double' to 'GLint', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(66,36): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(66,23): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(75,35): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(75,22): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(76,38): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(76,22): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(78,35): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(78,22): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(80,30): warning C4244: '=': conversion from 'double' to 'GLint', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(81,30): warning C4244: '=': conversion from 'double' to 'GLint', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(82,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(82,24): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(84,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(84,24): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(86,17): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(85,27): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(88,35): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(88,22): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(89,30): warning C4244: '=': conversion from 'double' to 'GLint', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(90,30): warning C4244: '=': conversion from 'double' to 'GLint', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(91,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(91,24): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(93,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(93,24): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(95,17): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(94,27): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(101,35): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(101,22): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(102,30): warning C4244: '=': conversion from 'double' to 'GLint', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(103,30): warning C4244: '=': conversion from 'double' to 'GLint', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(104,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(104,24): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(106,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(106,24): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(108,17): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(107,27): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(110,35): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(110,22): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(111,30): warning C4244: '=': conversion from 'double' to 'GLint', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(112,30): warning C4244: '=': conversion from 'double' to 'GLint', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(113,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(113,24): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(115,39): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(115,24): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(117,17): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(116,27): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Users\Timi\Documents\School\EEG 517\OpenGL Projects\AnimPro\Anim.cpp(184,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
   Generating code
-  1 of 9 functions (11.1%) were compiled, the rest were copied from previous compilation.
+  2 of 16 functions (12.5%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     1 functions had inline decision re-evaluated but remain unchanged
   Finished generating code

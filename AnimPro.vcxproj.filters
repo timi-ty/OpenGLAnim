@@ -15,12 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Triangle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <Library Include="..\..\..\..\..\..\..\Utility\GL\freeglut-MSVC-3.0.0-2.mp\freeglut\lib\freeglut.lib" />
     <Library Include="..\..\..\..\..\..\..\Utility\GL\GLTools-Win\lib\gltools.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Anim.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
