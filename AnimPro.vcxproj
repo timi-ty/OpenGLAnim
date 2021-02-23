@@ -147,7 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="Anim.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="..\..\..\..\..\..\..\Utility\GL\freeglut-MSVC-3.0.0-2.mp\freeglut\lib\freeglut.lib" />
