@@ -237,7 +237,7 @@ void idle(void) {
 void mouseFcn(GLint button, GLint action, GLint x, GLint y)
 {
 	switch (button) {
-	case GLUT_MIDDLE_BUTTON: // Start the rotation.
+	case GLUT_LEFT_BUTTON: // Start the rotation.
 		if (action == GLUT_DOWN)
 			glutIdleFunc(idle);
 		break;

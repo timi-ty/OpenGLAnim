@@ -149,10 +149,6 @@
   <ItemGroup>
     <ClCompile Include="Anim.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <Library Include="..\..\..\..\..\..\..\Utility\GL\freeglut-MSVC-3.0.0-2.mp\freeglut\lib\freeglut.lib" />
-    <Library Include="..\..\..\..\..\..\..\Utility\GL\GLTools-Win\lib\gltools.lib" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
